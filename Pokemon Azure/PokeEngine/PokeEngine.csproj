@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B3C21602-D6A0-4232-B31F-2529C6EFCAE4}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PokeEngine</RootNamespace>
+    <AssemblyName>PokeEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>054117c1-2ce7-4c30-b071-6b40cda89dda</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="lua51, Version=0.0.0.0, Culture=neutral, PublicKeyToken=1e1fb15b02227b8a, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\lua51.dll</HintPath>
+    </Reference>
+    <Reference Include="LuaInterface, Version=2.0.0.33506, Culture=neutral, PublicKeyToken=1e1fb15b02227b8a, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\LuaInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Base Stats\Base Stats\BaseStatsList.cs">
+      <Link>Classes\Mechanics Classes\Pokemon\BaseStatsList.cs</Link>
+    </Compile>
+    <Compile Include="Classes\Input\InputHandler.cs" />
+    <Compile Include="Classes\Input\KeyConfig.cs" />
+    <Compile Include="Classes\Input\KeyboardInput.cs" />
+    <Compile Include="Classes\Options.cs" />
+    <Compile Include="Classes\Screens\CinematicScreen.cs" />
+    <Compile Include="Classes\Screens\CutSceneScreen.cs" />
+    <Compile Include="Classes\Screens\Menu\MenuWindow.cs" />
+    <Compile Include="Classes\Screens\Menu\Window.cs" />
+    <Compile Include="Classes\Screens\Box\NameBox.cs" />
+    <Compile Include="Classes\Screens\OptionScreen.cs" />
+    <Compile Include="Classes\Screens\Screen.cs" />
+    <Compile Include="Classes\Screens\TitleMenuScreen.cs" />
+    <Compile Include="Tools\SaveLoad.cs" />
+    <Compile Include="Tools\SpriteText.cs" />
+    <None Include="Classes\ErrorHandler.cs" />
+    <Compile Include="Classes\Mechanics Classes\Battle\BattleEffect.cs" />
+    <Compile Include="Classes\Mechanics Classes\Battle\BattlePosition.cs" />
+    <Compile Include="Classes\Mechanics Classes\Battle\BattleStack.cs" />
+    <Compile Include="Classes\Screens\BattleMenu.cs" />
+    <Compile Include="Classes\Screens\BattleScreen.cs" />
+    <Compile Include="Classes\Screens\UI\OverworldUI.cs" />
+    <Compile Include="Classes\Screens\UI\OverworldUITab.cs" />
+    <None Include="Classes\Screens\YesNoDialogue.cs" />
+    <Compile Include="Tools\ImageTextureConverter.cs" />
+    <None Include="MoveListOld.cs" />
+    <Compile Include="Classes\Mechanics Classes\Battle\BattleChoice.cs" />
+    <Compile Include="Classes\Mechanics Classes\Battle\PokeBattle.cs" />
+    <Compile Include="Classes\Mechanics Classes\TFScriptHelper.cs" />
+    <Compile Include="Classes\Mechanics Classes\Moves\ActiveMove.cs" />
+    <Compile Include="Classes\Mechanics Classes\Moves\BaseMove.cs" />
+    <Compile Include="Classes\Mechanics Classes\Moves\MoveList.cs" />
+    <Compile Include="Classes\Mechanics Classes\Moves\TypeStrengths.cs" />
+    <Compile Include="Classes\Mechanics Classes\Pokemon\ActivePokemon.cs" />
+    <None Include="Classes\Mechanics Classes\Pokemon\BasePokemon.cs" />
+    <Compile Include="Classes\Mechanics Classes\Pokemon\BattlePokemon.cs" />
+    <None Include="Classes\Mechanics Classes\Pokemon\PokemonList.cs" />
+    <Compile Include="Classes\Mechanics Classes\Scenery\Scenery.cs" />
+    <Compile Include="Classes\Mechanics Classes\Trainers\NPC.cs" />
+    <Compile Include="Classes\Mechanics Classes\Trainers\Player.cs" />
+    <Compile Include="Classes\Mechanics Classes\Trainers\Trainer.cs" />
+    <Compile Include="Classes\Mechanics Classes\Zone\Tile\Tile.cs" />
+    <Compile Include="Classes\Mechanics Classes\Zone\World.cs" />
+    <Compile Include="Classes\Mechanics Classes\Zone\Zone.cs" />
+    <Compile Include="Classes\Screens\GameScreen\GameDraw.cs" />
+    <Compile Include="Classes\Screens\GameScreen\GameScreen.cs" />
+    <Compile Include="Classes\Screens\Box\DialogBox.cs" />
+    <Compile Include="Classes\Screens\InventoryScreen.cs" />
+    <Compile Include="Classes\Screens\Pokedex\PokedexScreen.cs" />
+    <Compile Include="Classes\Screens\Pokedex\Pokedex_AreaScreen.cs" />
+    <Compile Include="Classes\Screens\Pokedex\Pokedex_DataScreen.cs" />
+    <Compile Include="Classes\Screens\Pokemon_Inventory\Pokemon_InventoryScreen.cs" />
+    <Compile Include="Classes\Screens\Pokemon_Inventory\Pokemon_InventoryStats.cs" />
+    <Compile Include="Classes\Screens\SaveScreen.cs" />
+    <Compile Include="Classes\Screens\TitleScreen.cs" />
+    <Compile Include="Classes\Screens\UserScreen.cs" />
+    <Compile Include="Classes\Screens\ScreenHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Game1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Classes\Mechanics Classes\Moves\Scripts\Tackle.py" />
+    <Content Include="Classes\Mechanics Classes\Zone\Tile\debug_black_tile.png" />
+    <Content Include="Classes\Mechanics Classes\Zone\Tile\debug_brick_tile.png" />
+    <Content Include="Classes\Mechanics Classes\Zone\Tile\debug_dirt_tile.png" />
+    <Content Include="Classes\Mechanics Classes\Zone\Tile\debug_grass_tile.png" />
+    <Content Include="Classes\Mechanics Classes\Zone\Tile\debug_sand_tile.png" />
+    <Content Include="Classes\Mechanics Classes\Zone\Tile\debug_wall_tile.png" />
+    <Content Include="GameThumbnail.png" />
+    <Content Include="lua51.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LuaInterface.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Items\Items.csproj">
+      <Project>{5470A435-B055-4A1A-8374-EC79740E16FF}</Project>
+      <Name>Items</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PokeEngineContent\PokeEngineContent.contentproj">
+      <Project>{25CF61C0-8FDC-4EC7-8499-F493BC8B8832}</Project>
+      <Name>PokeEngineContent %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+    <ProjectReference Include="..\Pokemon Base Stats Editor\Pokemon Base Stats Editor\Pokemon Base Stats Editor.csproj">
+      <Project>{C22C5A9E-36C5-48DC-8050-F6FF6ACF3A25}</Project>
+      <Name>Pokemon Base Stats Editor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
